@@ -1,19 +1,21 @@
 [tool.poetry]
-name = "new-project"
+name = "transformers-test"
 version = "0.0.0"
-description = "New digiLab project"
-authors = ["Projects Team <projects@digilab.co.uk>"]
+description = "Transformers test"
 readme = "README.md"
-package-mode = false  # Comment to build a package
+package-mode = false
+
 
 [tool.poetry.dependencies]
-python = ">=3.10,<3.12"
-twinlab_models = { git = "https://github.com/digiLab-ai/twinLab-models", branch = "dev" }
+python = ">=3.9,<3.13"
+transformers = "^4.52.2"
+torch = "^2.7.0"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.28.0"
 matplotlib = "^3.8.2"
 python-dotenv = "^1.0.1"
+black = "^25.1.0"
 
 [build-system]
 requires = ["poetry-core"]
