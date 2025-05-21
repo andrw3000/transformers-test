@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "new-project"
+version = "0.0.0"
+description = "New digiLab project"
+authors = ["Projects Team <projects@digilab.co.uk>"]
+readme = "README.md"
+package-mode = false  # Comment to build a package
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+twinlab_models = { git = "https://github.com/digiLab-ai/twinLab-models", branch = "dev" }
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.28.0"
+matplotlib = "^3.8.2"
+python-dotenv = "^1.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
