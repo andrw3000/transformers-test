@@ -1,2 +1,4 @@
 .DS_Store/
 local_llm/
+poetry.lock
+__pycache__/
